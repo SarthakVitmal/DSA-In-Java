@@ -1,22 +1,27 @@
 package Arrays;
 
+import java.util.Arrays;
+
 public class plusOne {
     public static void main(String[] args) {
-        int[] arr = {9};
-        StringBuilder sb = new StringBuilder();
-        for(int num : arr){
-            sb.append(num);
-        }
-        int num = Integer.parseInt(sb.toString());
-        num = num + 1;
-        String str = Integer.toString(num);
-        int[] ans = new int[str.length()];
-        for (int i = 0; i < str.length(); i++) {
-            ans[i] = Character.getNumericValue(str.charAt(i));
+        int[] arr = {9,8,7,6,5,4,3,2,1,0};
+        int[] ans = plusOne(arr);
+        System.out.println(Arrays.toString(ans));
+    }
+
+    public static int[] plusOne(int[] digits) {
+        int n = digits.length;
+
+        for (int i = n - 1; i >= 0; i--) {
+            if (digits[i] < 9) {
+                digits[i]++;
+                return digits;
+            }
+            digits[i] = 0;
         }
 
-        for (int i = 0; i < ans.length; i++) {
-            System.out.print(ans[i] + " ");
-        }
+        int[] newNumber = new int[n + 1];
+        newNumber[0] = 1;
+        return newNumber;
     }
 }
