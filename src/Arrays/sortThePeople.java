@@ -1,18 +1,17 @@
 package Arrays;
 
+import java.util.HashMap;
+
 public class sortThePeople {
     public static String[] sortPeople(String[] names,int[] heights){
-        int max = Integer.MIN_VALUE;
-        String[] ans = new String[10];
-        int maxIdx = -1;
+        String[] ans = new String[names.length];
+        HashMap<String,Integer> map = new HashMap<>();
+
         for (int i = 0; i < names.length; i++) {
-            for (int j = 0; j < heights.length; j++) {
-                if(heights[j] > max){
-                    max = heights[j];
-                    maxIdx = j;
-                }
-            }
+            map.put(names[i],heights[i]);
         }
+
+        System.out.println(map);
         return ans;
     }
     public static void main(String[] args) {
