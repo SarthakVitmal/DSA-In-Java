@@ -44,7 +44,7 @@ Each directory contains Java files with well-structured solutions and comments e
 
 ## 🏆 LeetCode Progress
 
-- ✅ Solved **250+** problems (and counting)
+- ✅ Solved **350+** problems (and counting)
 - 📌 Topics covered: Arrays, Strings, Linked List, Trees, Graphs, DP, and more
 - 🔥 Continuously updating the repo with new solutions
 
