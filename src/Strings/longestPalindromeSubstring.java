@@ -2,12 +2,12 @@ package Strings;
 
 public class longestPalindromeSubstring {
     public static String longestPalindrome(String s){
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb;
         StringBuilder ans = new StringBuilder();
         int n = s.length() - 1;
         int i = 0; int j = n;
         int maxLen = 0;
-
+        if(s.length() == 1)return s;
         while (i < j){
             int length = 0;
             sb = new StringBuilder();
@@ -20,12 +20,13 @@ public class longestPalindromeSubstring {
                 System.out.println(ans);
                 ans = sb;
             }
+            i++;
             j--;
         }
         return ans.toString();
     }
     public static void main(String[] args) {
-        String s = "cbbd";
+        String s = "ac";
         String ans = longestPalindrome(s);
         System.out.println(ans);
     }
