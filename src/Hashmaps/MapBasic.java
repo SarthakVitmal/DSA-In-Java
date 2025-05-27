@@ -1,6 +1,7 @@
 package Hashmaps;
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class MapBasic {
     public static void main(String[] args) {
@@ -8,7 +9,7 @@ public class MapBasic {
         map.put("Sarthak",1);
         map.put("Yashraj",2);
         map.put("Saket",3);
-        map.put("Omkar",4);
+        map.put("Deep",4);
         map.put("Raghav",5);
         map.put("Harsh",6);
         map.put("Sarthak",20);
