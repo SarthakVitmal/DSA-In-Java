@@ -18,18 +18,15 @@ public class minimumIndexSumOfTwoLists {
         HashMap<String,Integer> list1Map = new HashMap<>();
         HashMap<String,Integer> list2Map = new HashMap<>();
         for (int i = 0; i < list1.length; i++) {
-            String str = list1[i];
-            list1Map.put(str,i);
+            list1Map.put(list1[i],i);
         }
         for (int i = 0; i < list2.length; i++) {
-            String str = list2[i];
-            list2Map.put(str,i);
+            list2Map.put(list2[i],i);
         }
         HashMap<String, Integer> map = new HashMap<>();
         for(String key : list1Map.keySet()){
             if(list2Map.containsKey(key)){
-                int freq1 = list1Map.get(key); int freq2 = list2Map.get(key);
-                map.put(key,freq1+freq2);
+                map.put(key,list1Map.get(key)+list2Map.get(key));
             }
         }
         ArrayList<String> al = new ArrayList<>();
@@ -39,8 +36,7 @@ public class minimumIndexSumOfTwoLists {
                 minSum = Math.min(minSum, values);
             }
             for(String key : map.keySet()){
-                int freq = map.get(key);
-                if(freq == minSum){
+                if(map.get(key) == minSum){
                     al.add(key);
                 }
             }
