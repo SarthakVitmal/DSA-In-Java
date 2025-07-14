@@ -34,7 +34,7 @@ Each directory contains Java files with well-structured solutions and comments e
    ```
 2. Navigate to the desired topic:
    ```bash
-   cd dsa-in-java/src/Arrays
+   cd DSA-In-Java/src/Arrays
    ```
 3. Open any Java file and run it using:
    ```bash
@@ -44,9 +44,13 @@ Each directory contains Java files with well-structured solutions and comments e
 
 ## 🏆 LeetCode Progress
 
-- ✅ Solved **350+** problems (and counting)
+- ✅ Solved **450+** problems (and counting)
 - 📌 Topics covered: Arrays, Strings, Linked List, Trees, Graphs, DP, and more
 - 🔥 Continuously updating the repo with new solutions
+
+## 🧑‍💻 LeetCode Profile
+
+![LeetCode Stats](images/img.png)
 
 ## 📚 Resources Used
 
